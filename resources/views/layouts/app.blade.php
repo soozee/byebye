@@ -7,8 +7,11 @@
     
     @include('partials.header')
 
+    <div class="hero">
+      @yield('hero')
+    </div>
 
-    <div class="wrap container" role="document">
+    <div class="wrap grid-container" role="document">
       <div class="content">
         <main class="main">
           @yield('content')

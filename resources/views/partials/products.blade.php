@@ -1,19 +1,82 @@
-@extends('layouts.app')
+ <div class="grid-x cell text-center">
+      <h2>Our Newest Products</h2>
+      <hr>
+    </div>
 
-@section('hero')
-  @include('partials.orbit')
-@endsection
+    <div class="grid-x small-up-2 large-up-4">
+      <div class="cell">
+        <img class="thumbnail" src="http://placehold.it/300x400">
+        <h5>Nulla At Nulla Justo, Eget</h5>
+        <p>$400</p>
+        <a href="#" class="button expanded">Buy</a>
+      </div>
+      <div class="cell">
+        <img class="thumbnail" src="http://placehold.it/300x400">
+        <h5>Nulla At Nulla Justo, Eget</h5>
+        <p>$400</p>
+        <a href="#" class="button expanded">Buy</a>
+      </div>
+      <div class="cell">
+        <img class="thumbnail" src="http://placehold.it/300x400">
+        <h5>Nulla At Nulla Justo, Eget</h5>
+        <p>$400</p>
+        <a href="#" class="button expanded">Buy</a>
+      </div>
+      <div class="cell">
+        <img class="thumbnail" src="http://placehold.it/300x400">
+        <h5>Nulla At Nulla Justo, Eget</h5>
+        <p>$400</p>
+        <a href="#" class="button expanded">Buy</a>
+      </div>
+    </div>
 
-@section('content')
-@include('foursquare')
-  
- @while(have_posts()) @php(the_post())
-    @include('partials.home-page-header')
-   @include('partials.products')
+<!-- more -->
+    <div class="grid-x cell text-center">
+      <h2>Some Other Neat Products</h2>
+      <hr>
+    </div>
 
-    <hr>
-    @include('partials.services')
-    
+    <div class="grid-x small-up-2 medium-up-3 large-up-6">
+      <div class="cell">
+        <img class="thumbnail" src="http://placehold.it/300x400">
+        <h5>Nulla At Nulla Justo, Eget</h5>
+        <p>$400</p>
+        <a href="#" class="button small expanded hollow">Buy</a>
+      </div>
+      <div class="cell">
+        <img class="thumbnail" src="http://placehold.it/300x400">
+        <h5>Nulla At Nulla Justo, Eget</h5>
+        <p>$400</p>
+        <a href="#" class="button small expanded hollow">Buy</a>
+      </div>
+      <div class="cell">
+        <img class="thumbnail" src="http://placehold.it/300x400">
+        <h5>Nulla At Nulla Justo, Eget</h5>
+        <p>$400</p>
+        <a href="#" class="button small expanded hollow">Buy</a>
+      </div>
+      <div class="cell">
+        <img class="thumbnail" src="http://placehold.it/300x400">
+        <h5>Nulla At Nulla Justo, Eget</h5>
+        <p>$400</p>
+        <a href="#" class="button small expanded hollow">Buy</a>
+      </div>
+      <div class="cell">
+        <img class="thumbnail" src="http://placehold.it/300x400">
+        <h5>Nulla At Nulla Justo, Eget</h5>
+        <p>$400</p>
+        <a href="#" class="button small expanded hollow">Buy</a>
+      </div>
+      <div class="cell">
+        <img class="thumbnail" src="http://placehold.it/300x400">
+        <h5>Nulla At Nulla Justo, Eget</h5>
+        <p>$400</p>
+        <a href="#" class="button small expanded hollow">Buy</a>
+      </div>
+    </div>
+
+    <!-- more 2 -->
+        <hr>
     <div class="grid-x">
       <div class="medium-4 cell">
         <h4>Top Products</h4>
@@ -106,41 +169,3 @@
         </div>
       </div>
     </div>
-
-    <div class="callout large secondary">
-      <div class="grid-x">
-        <div class="large-4 cell">
-          <h5>Vivamus Hendrerit Arcu Sed Erat Molestie</h5>
-          <p>Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit.</p>
-        </div>
-        <div class="large-3 large-offset-2 cell">
-          <ul class="menu vertical">
-            <li><a href="#">One</a></li>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Three</a></li>
-            <li><a href="#">Four</a></li>
-          </ul>
-        </div>
-        <div class="large-3 cell">
-          <ul class="menu vertical">
-            <li><a href="#">One</a></li>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Three</a></li>
-            <li><a href="#">Four</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
-</html>
-
-    @include('partials.content-page')
-
-  @endwhile
-@endsection
