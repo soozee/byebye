@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-@include('foursquare')
+@include('partials.foursquare')
   
  @while(have_posts()) @php(the_post())
     @include('partials.home-page-header')
