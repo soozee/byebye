@@ -47,8 +47,6 @@
   } // .card-profile-stats-more
 } // .card-profile-stats
 
-
-
 /* Large and up */
 @include breakpoint(large) {
   .card-profile-stats {
@@ -70,6 +68,5 @@
       justify-content: space-around;
     } // .card-profile-stats-container
   } // .card-profile-stats
-
 } // media query - large & up
 

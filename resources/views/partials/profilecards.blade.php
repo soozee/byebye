@@ -9,7 +9,7 @@
   </div> <!-- /.card-profile-stats-intro -->
 
   <hr />
-
+  
   <div class="card-profile-stats-container">
     <div class="card-profile-stats-statistic">
       <span class="stat">25</span>
@@ -34,8 +34,6 @@
     </div> <!-- /.card-profile-stats-more-content -->
   </div> <!-- /.card-profile-stats-more -->
 </div> <!-- /.card-profile-stats -->
-
-
 <!-- two -->
 <div class="card-profile-stats">
   <div class="card-profile-stats-intro">
@@ -72,4 +70,3 @@
     </div> <!-- /.card-profile-stats-more-content -->
   </div> <!-- /.card-profile-stats-more -->
 </div> <!-- /.card-profile-stats -->
-
