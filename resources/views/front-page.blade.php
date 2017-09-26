@@ -6,6 +6,7 @@
 
 @section('content')
 @include('partials.foursquare')
+@include('partials.profilecards')
   
  @while(have_posts()) @php(the_post())
     @include('partials.home-page-header')
@@ -13,7 +14,6 @@
 
     <hr>
     @include('partials.services')
-    @include('partials.profilecards')
     
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>

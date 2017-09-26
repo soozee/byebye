@@ -9,12 +9,13 @@
 
     .card-profile-stats-intro-pic {
       border-radius: 50%;
-      margin: 0 0 1.25rem;
+      margin: 0 auto;
     } // .card-profile-stats-intro-pic
 
     .card-profile-stats-intro-content {
       p:last-child {
-        margin: 0;
+        margin: 0 auto;
+        text-align: center;
       } // p:last-child
     } // .card-profile-stats-intro-content
   } // .card-profile-stats-intro
