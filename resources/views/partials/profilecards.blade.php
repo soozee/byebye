@@ -1,112 +1,37 @@
+<div>
+  <h2>Meet ByeBye</h2>
+</div>
 <div class="grid-x">
-<!--ONe -->
-<div class="card-profile-stats large-4 columns">
-  <div class="card-profile-stats-intro">
-    <img class="card-profile-stats-intro-pic" src="https://pbs.twimg.com/profile_images/732634911761260544/OxHbNdTF.jpg" alt="profile-image" />
-    <div class="card-profile-stats-intro-content">
-      <h3>Joe Smith</h3>
-      <p>Joined Jan.16th 2017</small></p>
-    </div> <!-- /.card-profile-stats-intro-content -->
-  </div> <!-- /.card-profile-stats-intro -->
-
-  <hr />
-  
-  <div class="card-profile-stats-container">
-    <div class="card-profile-stats-statistic">
-      <span class="stat">25</span>
-      <p>posts</p>
-    </div> <!-- /.card-profile-stats-statistic -->
-    <div class="card-profile-stats-statistic">
-      <span class="stat">125</span>
-      <p>followers</p>
-    </div> <!-- /.card-profile-stats-statistic -->
-    <div class="card-profile-stats-statistic">
-      <span class="stat">88</span>
-      <p>likes</p>
-    </div> <!-- /.card-profile-stats-statistic -->
-  </div> <!-- /.card-profile-stats-container -->
-
-  <div class="card-profile-stats-more">
-    <p class="card-profile-stats-more-link"><a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a></p>
-    <div class="card-profile-stats-more-content">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem libero fugit, pariatur maxime! Optio enim, deserunt quia molestiae fugiat delectus, dolore et esse nostrum, quod autem necessitatibus fugit soluta repellendus.
-      </p>
-    </div> <!-- /.card-profile-stats-more-content -->
-  </div> <!-- /.card-profile-stats-more -->
-</div> <!-- /.card-profile-stats -->
-<!-- two -->
-<div class="card-profile-stats large-4 columns">
-  <div class="card-profile-stats-intro">
-    <img class="card-profile-stats-intro-pic" src="https://pbs.twimg.com/profile_images/732634911761260544/OxHbNdTF.jpg" alt="profile-image" />
-    <div class="card-profile-stats-intro-content">
-      <h3>Joe Smith</h3>
-      <p>Joined Jan.16th 2017</small></p>
-    </div> <!-- /.card-profile-stats-intro-content -->
-  </div> <!-- /.card-profile-stats-intro -->
-
-  <hr />
-
-  <div class="card-profile-stats-container">
-    <div class="card-profile-stats-statistic">
-      <span class="stat">25</span>
-      <p>posts</p>
-    </div> <!-- /.card-profile-stats-statistic -->
-    <div class="card-profile-stats-statistic">
-      <span class="stat">125</span>
-      <p>followers</p>
-    </div> <!-- /.card-profile-stats-statistic -->
-    <div class="card-profile-stats-statistic">
-      <span class="stat">88</span>
-      <p>likes</p>
-    </div> <!-- /.card-profile-stats-statistic -->
-  </div> <!-- /.card-profile-stats-container -->
-
-  <div class="card-profile-stats-more">
-    <p class="card-profile-stats-more-link"><a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a></p>
-    <div class="card-profile-stats-more-content">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem libero fugit, pariatur maxime! Optio enim, deserunt quia molestiae fugiat delectus, dolore et esse nostrum, quod autem necessitatibus fugit soluta repellendus.
-      </p>
-    </div> <!-- /.card-profile-stats-more-content -->
-  </div> <!-- /.card-profile-stats-more -->
-</div> <!-- /.card-profile-stats -->
-
-<!-- three -->
-<div class="card-profile-stats large-4 columns">
-  <div class="card-profile-stats-intro">
-    <img class="card-profile-stats-intro-pic" src="https://pbs.twimg.com/profile_images/732634911761260544/OxHbNdTF.jpg" alt="profile-image" />
-    <div class="card-profile-stats-intro-content">
-      <h3>Joe Smith</h3>
-      <p>Joined Jan.16th 2017</small></p>
-    </div> <!-- /.card-profile-stats-intro-content -->
-  </div> <!-- /.card-profile-stats-intro -->
-
-  <hr />
-
-  <div class="card-profile-stats-container">
-    <div class="card-profile-stats-statistic">
-      <span class="stat">25</span>
-      <p>posts</p>
-    </div> <!-- /.card-profile-stats-statistic -->
-    <div class="card-profile-stats-statistic">
-      <span class="stat">125</span>
-      <p>followers</p>
-    </div> <!-- /.card-profile-stats-statistic -->
-    <div class="card-profile-stats-statistic">
-      <span class="stat">88</span>
-      <p>likes</p>
-    </div> <!-- /.card-profile-stats-statistic -->
-  </div> <!-- /.card-profile-stats-container -->
-
-  <div class="card-profile-stats-more">
-    <p class="card-profile-stats-more-link"><a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a></p>
-    <div class="card-profile-stats-more-content">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem libero fugit, pariatur maxime! Optio enim, deserunt quia molestiae fugiat delectus, dolore et esse nostrum, quod autem necessitatibus fugit soluta repellendus.
-      </p>
-    </div> <!-- /.card-profile-stats-more-content -->
-  </div> <!-- /.card-profile-stats-more -->
-</div> <!-- /.card-profile-stats -->
-
+  <!-- one -->
+  <div class="card-user-profile">
+    <img class="card-user-profile-img" src="https://images.pexels.com/photos/5439/earth-space.jpg?h=350&auto=compress&cs=tinysrgb" alt="picture of space" />
+    <div class="card-user-profile-content card-section">
+      <div class="card-user-profile-avatar">
+        <img src="https://pbs.twimg.com/profile_images/422887689612820482/sZtHMJu5.png" alt="picture of yeti" />
+      </div>
+      <p class="card-user-profile-name">Abominable Snowman</p>
+      <p class="card-user-profile-status">Yeti Web Designer</p>
+      <p class="card-user-profile-info">The Yeti, once better known as the Abominable Snowman, is a mysterious bipedal creature said to live in the mountains of Asia. It sometimes leaves tracks in snow, but is also said to dwell below the Himalayan snow line.</p>
+    </div>
+    <div class="card-user-profile-actions">
+      <a href="#" class="card-user-profile-button button hollow">Follow</a>
+      <a href="#" class="card-user-profile-button button hollow secondary">More Info</a>
+    </div>
+  </div>
+  <!-- two -->
+  <div class="card-user-profile">
+    <img class="card-user-profile-img" src="https://images.pexels.com/photos/5439/earth-space.jpg?h=350&auto=compress&cs=tinysrgb" alt="picture of space" />
+    <div class="card-user-profile-content card-section">
+      <div class="card-user-profile-avatar">
+        <img src="https://pbs.twimg.com/profile_images/422887689612820482/sZtHMJu5.png" alt="picture of yeti" />
+      </div>
+      <p class="card-user-profile-name">Abominable Snowman</p>
+      <p class="card-user-profile-status">Yeti Web Designer</p>
+      <p class="card-user-profile-info">The Yeti, once better known as the Abominable Snowman, is a mysterious bipedal creature said to live in the mountains of Asia. It sometimes leaves tracks in snow, but is also said to dwell below the Himalayan snow line.</p>
+    </div>
+    <div class="card-user-profile-actions">
+      <a href="#" class="card-user-profile-button button hollow">Follow</a>
+      <a href="#" class="card-user-profile-button button hollow secondary">More Info</a>
+    </div>
+  </div>
 </div>
