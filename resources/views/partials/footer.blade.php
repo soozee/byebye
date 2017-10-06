@@ -1,9 +1,3 @@
-<!-- <footer class="content-info">
-  <div class="container">
-    @php(dynamic_sidebar('sidebar-footer'))
-  </div>
-</footer> -->
-
 <footer class="marketing-site-footer">
   <div class="grid-x medium-unstack">
     <div class="medium-4 cell">
