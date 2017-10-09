@@ -1,7 +1,7 @@
 /** Colors */
 $foundation-palette: (
   primary: #1f4939,
-  secondary: #1866ff,
+  secondary: #ffcbd8,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
@@ -9,3 +9,7 @@ $foundation-palette: (
 
 $card-background: #ccc;
 $body-font-color: #333;
+
+.mais {
+    padding:10px;
+}

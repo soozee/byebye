@@ -37,10 +37,10 @@
     </div>
 
     <div class="grid-x small-up-2 medium-up-3 large-up-6">
-      <div class="cell">
-        <img class="thumbnail" src="https://i1.wp.com/www.swingfashionista.com/wp-content/uploads/2010/05/scarlett-johansson-300x400.jpg?resize=300%2C400">
-        <h5>Nulla At Nulla Justo, Eget</h5>
-        <p>$400</p>
+      <div class="cell mais">
+        <img class="thumbnail" src="{{ $service['image'] }}">
+        <h5>{{ $service['name'] }}</h5>
+        <p>{{ $service['price'] }}</p>
         <a href="#" class="button small expanded hollow">Buy</a>
       </div>
       <div class="cell">

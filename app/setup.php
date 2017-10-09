@@ -126,3 +126,51 @@ add_action('after_setup_theme', function () {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
 });
+
+add_action('init', function() {
+    register_post_type('staff',
+      [
+        // Define all labels that you want within admin UI here
+        // https://codex.wordpress.org/Function_Reference/register_post_type
+        'labels' => [
+            'name' => __( 'Staff' ),
+            'singular_name' => __( 'Staff Member' ),
+            'add_new_item' => __( 'Add New Staff Member'),
+            // 'add_new' => __( 'Add new staff member'),
+            // 'new_item' => __( 'Add new staff member')
+        ],
+        'public' => true,
+        'has_archive' => true,
+        'supports' => [
+            'thumbnail',
+            'title',
+            'editor',
+            'custom-fields'
+        ]
+      ]
+    );
+});
+
+add_action('init', function() {
+    register_post_type('products',
+      [
+        // Define all labels that you want within admin UI here
+        // https://codex.wordpress.org/Function_Reference/register_post_type
+        'labels' => [
+            'name' => __( 'Products' ),
+            'singular_name' => __( 'Product' ),
+            'add_new_item' => __( 'Add New Product'),
+            // 'add_new' => __( 'Add new staff member'),
+            // 'new_item' => __( 'Add new staff member')
+        ],
+        'public' => true,
+        'has_archive' => true,
+        'supports' => [
+            'thumbnail',
+            'title',
+            'editor',
+            'custom-fields'
+        ]
+      ]
+    );
+});

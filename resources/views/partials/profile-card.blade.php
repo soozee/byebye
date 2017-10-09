@@ -2,7 +2,7 @@
 	<img class="card-user-profile-img" src="https://images.pexels.com/photos/5439/earth-space.jpg?h=350&auto=compress&cs=tinysrgb" alt="picture of space" />
 	<div class="card-user-profile-content card-section">
 		<div class="card-user-profile-avatar">
-			<img src="https://pbs.twimg.com/profile_images/422887689612820482/sZtHMJu5.png" alt="picture of yeti" />
+			<img src="{{ $staff['image'] }}" />
 		</div>
 		<p class="card-user-profile-name">{{ $staff['name'] }}</p>
 		<p class="card-user-profile-status">{{ $staff['URL'] }}</p>

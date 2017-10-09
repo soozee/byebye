@@ -38,6 +38,11 @@ $card-user-profile-text-color: $body-font-color;
   display: flex;
 }
 
+.marketing-site-content-section,
+.large-4 {
+  padding: 10px;
+}
+
 .card-user-profile-img {
   max-width: 100%;
   opacity: 0.85;

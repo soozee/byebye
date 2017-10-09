@@ -4,16 +4,19 @@
 <div class="grid-x">
   <?php $data = [
     [
+      'name' => "Devynne Foote",
+      'URL' => 'Devynne@byebye.com',
+      'image' => '/wp-content/uploads/2017/10/Devynne.jpg'
+    ],
+    [
+      'name' => "Kaeci Durfey",
+      'URL' => 'Kaeci@byebye.com',
+      'image' => '/wp-content/uploads/2017/10/Kaeci-Durfey-.jpg'
+    ],
+    [
       'name' => "Chris",
-      'URL' => 'http://asdf'
-    ],
-    [
-      'name' => "Suz",
-      'URL' => 'http://asdf'
-    ],
-    [
-      'name' => "Ben",
-      'URL' => 'http://asdf'
+      'URL' => 'chris@byebye.com',
+      'image' => '/wp-content/uploads/2017/10/chris.jpg'
     ]
   ];
   ?>
