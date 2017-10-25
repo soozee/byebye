@@ -1,4 +1,4 @@
-<div class="cell">
+<div class="cell mais">
     <img class="thumbnail" src="{{ $service['image'] }}">
     <h5>{{ $service['name'] }}</h5>
     <p>{{ $service['price'] }}</p>

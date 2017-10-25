@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Support\Facades\Blade;
 use Roots\Sage\Container;
 
 /**

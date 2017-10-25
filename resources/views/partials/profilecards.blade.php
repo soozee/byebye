@@ -21,7 +21,7 @@
   ];
   ?>
   @foreach ($data as $staff)
-    <div class="cell large-4">
+    <div class="cell large-4 mais">
       @include('partials.profile-card', [
         'person' => $staff
       ])

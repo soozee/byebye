@@ -37,7 +37,7 @@
   ?>
     <div class="grid-x small-up-2 medium-up-3 large-up-6">
       @foreach ($data as $service)
-    <div class="cell large-4">
+    <div class="cell large-4 mais">
       @include('partials.service', [
         'person' => $service
       ])

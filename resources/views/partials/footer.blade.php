@@ -1,6 +1,6 @@
 <footer class="marketing-site-footer">
   <div class="grid-x medium-unstack">
-    <div class="medium-4 cell">
+    <div class="medium-4 cell mais">
       <h4 class="marketing-site-footer-name">Bye Bye Medspa</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorem accusantium architecto id quidem, itaque nesciunt quam ducimus atque.</p>
       <ul class="menu marketing-site-footer-menu-social simple">
