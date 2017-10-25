@@ -4,12 +4,10 @@
   <body @php(body_class())>
     @php(do_action('get_header'))
 
-    
+
     @include('partials.header')
 
-    <div class="hero">
-      @yield('hero')
-    </div>
+    @include('partials.block')
 
     <div class="wrap grid-container" role="document">
       <div class="content">
