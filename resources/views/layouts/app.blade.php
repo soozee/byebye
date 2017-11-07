@@ -3,13 +3,8 @@
   @include('partials.head')
   <body @php(body_class())>
     @php(do_action('get_header'))
-
-
     @include('partials.header')
-
-    @include('partials.block')
-
-    <div class="wrap grid-container" role="document">
+    <div class="wrap container" role="document">
       <div class="content">
         <main class="main">
           @yield('content')

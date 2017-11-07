@@ -2,7 +2,6 @@
 
 namespace App;
 
-use Illuminate\Support\Facades\Blade;
 use Roots\Sage\Container;
 
 /**
@@ -137,5 +136,6 @@ function display_sidebar()
 {
     static $display;
     isset($display) || $display = apply_filters('sage/display_sidebar', false);
+
     return $display;
 }
