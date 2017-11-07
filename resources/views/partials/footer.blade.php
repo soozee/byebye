@@ -13,7 +13,7 @@
        <h4 class="marketing-site-footer-title">Contact Info</h4>
       <div class="marketing-site-footer-block">
         <i class="fa fa-map-marker" aria-hidden="true"></i>
-        <p>100 W Rincon<br>San Francisco, CA 94015</p>
+        <p>515 S. 700 E.<br>Salt Lake City, UT 84105</p>
       </div>
       <div class="marketing-site-footer-block">
         <i class="fa fa-phone" aria-hidden="true"></i>

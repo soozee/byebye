@@ -22,3 +22,18 @@ const routes = new Router({
 
 // Load Events
 jQuery(document).ready(() => routes.loadEvents());
+
+$(window).load(function(){
+  const grid = document.querySelector('.masonry')
+  const msnry = new Masonry(grid, {
+    itemSelector: '.cell',
+    transitionDuration: 0,
+    initLayout: false,
+  })
+
+  msnry.once('layoutComplete', () => {
+    grid.classList.add('load')
+  })
+
+  msnry.layout()
+});

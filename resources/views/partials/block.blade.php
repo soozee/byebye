@@ -1,11 +1,30 @@
-<div class="header-grid">
-  <div id="b1" class="block"></div>
-  <div id="b2" class="block"></div>
-  <div id="b3" class="block"></div>
-  <div id="b4" class="block"></div>
-  <div class="bottom-block">
-    <div id="b5" class="block"></div>
-    <div id="b6" class="block"></div>
-    <div id="b7" class="block"></div>
+<script>
+  $(window).load(function(){
+  $('#container').masonry({
+    itemSelector: '#container li'
+  });
+});
+</script>
+
+@php($query = new WP_Query([
+  'post_type' => 'product'
+]))
+
+@if ($query->have_posts())
+
+  <div class="grid-x small-up-2 medium-up-3 large-up-4 grid">
+
+    @while ( $query->have_posts() )
+
+      @php($query->the_post())
+
+      @include('partials.julia')
+
+    @endwhile
+
   </div>
-</div>
+@else
+    Nothing is here.
+@endif
+
+@php(wp_reset_postdata())
