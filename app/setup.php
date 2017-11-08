@@ -12,6 +12,8 @@ use Roots\Sage\Template\BladeProvider;
  */
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
+    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Amatic+SC|Poiret+One', false, null);
+
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
 }, 100);
 
@@ -40,7 +42,8 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage')
+        'primary_navigation' => __('Primary Navigation', 'sage'),
+        'footer_menu' => 'Footer Menu'
     ]);
 
     /**
@@ -56,7 +59,7 @@ add_action('after_setup_theme', function () {
     add_theme_support('html5', ['caption', 'comment-form', 'comment-list', 'gallery', 'search-form']);
 
     /**
-     * Enable selective refresh for widgets in customizer
+     * Enable selective refresh for wid`s in customizer
      * @link https://developer.wordpress.org/themes/advanced-topics/customizer-api/#theme-support-in-sidebars
      */
     add_theme_support('customize-selective-refresh-widgets');
@@ -66,6 +69,11 @@ add_action('after_setup_theme', function () {
      * @see resources/assets/styles/layouts/_tinymce.scss
      */
     add_editor_style(asset_path('styles/main.css'));
+
+    add_theme_support('woocommerce');
+    add_theme_support( 'wc-product-gallery-zoom' );
+    add_theme_support( 'wc-product-gallery-lightbox' );
+    add_theme_support( 'wc-product-gallery-slider' );
 }, 20);
 
 /**
@@ -125,4 +133,41 @@ add_action('after_setup_theme', function () {
     sage('blade')->compiler()->directive('asset', function ($asset) {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
+});
+
+/**
+ * ACF options
+ */
+
+
+add_action( 'init', function() {
+    if( function_exists('acf_add_options_page') ) {
+
+        acf_add_options_page(array(
+            'page_title'    => 'Theme General Settings',
+            'menu_title'    => 'Theme Settings',
+            'menu_slug'     => 'theme-general-settings',
+            'capability'    => 'edit_posts',
+            'redirect'      => false
+        ));
+
+        acf_add_options_sub_page(array(
+            'page_title'    => 'Theme Header Settings',
+            'menu_title'    => 'Header',
+            'parent_slug'   => 'theme-general-settings',
+        ));
+
+        acf_add_options_sub_page(array(
+            'page_title'    => 'Theme Footer Settings',
+            'menu_title'    => 'Footer',
+            'parent_slug'   => 'theme-general-settings',
+        ));
+    }
+});
+
+add_shortcode( 'social-icons', function() {
+    ob_start();
+    include \App\template_path(locate_template('partials/social-media-icons.blade.php'));
+
+    return ob_get_clean();
 });

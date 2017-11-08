@@ -1,3 +1,84 @@
 .banner .nav {
   @extend .menu;
 }
+
+$sticky-shrinknav-menu-height: rem-calc(30);
+$sticky-shrinknav-hero-height: 200px;
+
+body {
+  padding-top: $sticky-shrinknav-hero-height + 30px;
+
+  &.home {
+    padding-top: 0;
+  }
+}
+
+.sticky-shrinknav-menu {
+  @include horizontal-center;
+
+  bottom: 0;
+  height: $sticky-shrinknav-menu-height;
+  line-height: $sticky-shrinknav-menu-height;
+  width: 100%;
+  background-color: #6b6e69;
+  transition: all 0.5s ease;
+
+  li {
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    font-family: font(primary);
+
+    &:hover {
+      box-shadow: 0 0 0 1px $white;
+      z-index: 3;
+      margin-bottom: 2px;
+    }
+  }
+
+  a {
+    color: $white;
+  }
+}
+
+header h1 {
+  font-family: font(primary);
+}
+
+.sticky-shrinknav-header-title {
+  transition: all 0.3s ease;
+  position: relative;
+  transform: translateY(-$sticky-shrinknav-menu-height/2);
+  margin-bottom: 0;
+  color: $white;
+}
+
+.sticky-shrinknav-header {
+  width: 100%;
+  height: $sticky-shrinknav-hero-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6b6e69;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+body.sticky-shrinknav-wrapper {
+  padding-top: 130px;
+
+  .sticky-shrinknav-header {
+    height: $sticky-shrinknav-menu-height;
+    background-color: #6b6e69;
+
+    .sticky-shrinknav-header-title {
+      transform: scale(0);
+      transition: all 0.3s ease;
+      font-family: font(primary);
+    }
+  }
+}
+

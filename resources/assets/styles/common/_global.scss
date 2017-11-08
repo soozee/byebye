@@ -1,0 +1,38 @@
+body {
+  background-color: #6b6e69;
+}
+
+h1 {
+  font-family: font(primary);
+}
+
+.single-product #page {
+  padding: 0 10%;
+
+  #sidebar {
+    display: none;
+  }
+}
+
+.single-product,
+.product-template-default,
+.woocommerce,
+.blog,
+.page,
+.page-id-17,
+.single-post {
+  .container {
+    padding: 0 10% 2%;
+  }
+}
+
+.hero img {
+  max-height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.blog-image {
+  max-width: 30%;
+}
+

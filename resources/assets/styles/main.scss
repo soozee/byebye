@@ -23,6 +23,6 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
-@import "components/hero";
-@import "components/foursquare";
-@import "components/profilecards";
+@import "common/ruby";
+@import "common/blog";
+@import "components/masonry";

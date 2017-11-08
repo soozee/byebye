@@ -1,0 +1,24 @@
+.masonry {
+  .cell {
+    h3 {
+      color: #fff;
+      font-family: font(primary);
+      text-align: center;
+      text-shadow: 1px 1px rgba(0, 0, 0, 0.32);
+      transition: all 0.3s ease;
+      visibility: hidden;
+    }
+
+    &:hover h3 {
+      visibility: visible;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    img {
+      max-width: 98%;
+    }
+  }
+}

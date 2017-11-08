@@ -56,6 +56,8 @@
       ]
     },
     "rules": {
+      "no-console": "off",
+      "no-debugger": "off",
       "comma-dangle": [
         "error",
         {
@@ -129,6 +131,7 @@
   "dependencies": {
     "font-awesome": "~4.7",
     "foundation-sites": "~6.4",
-    "jquery": "1.12.4 - 3"
+    "jquery": "1.12.4 - 3",
+    "masonry-layout": "^4.2.0"
   }
 }
