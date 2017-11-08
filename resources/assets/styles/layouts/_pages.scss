@@ -41,3 +41,18 @@ label {
     color: #000;
   }
 }
+
+.woocommerce a.button {
+  border: 1px solid #f1f7ed;
+  color: #f1f7ed;
+  background: transparent;
+}
+
+.woocommerce ul.products li.product .price del {
+  display: inline;
+}
+
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+  text-align: center;
+}

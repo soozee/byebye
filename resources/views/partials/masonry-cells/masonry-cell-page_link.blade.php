@@ -4,8 +4,8 @@
 <a href="{{ get_permalink($currentPost->ID) }}">
     <figcaption>
         <h3>{{ get_the_title($currentPost->ID) }}</h3>
-        @if( the_sub_field('page_link_text') )
-        <p>{!! get_sub_field('page_link_text') !!}</p>
+        @if( get_sub_field('page_link_text') )
+        <p>{{ the_sub_field('page_link_text') }}</p>
         @endif
     </figcaption>
     @php ($image = get_sub_field('cell_image'))

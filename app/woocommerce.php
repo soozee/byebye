@@ -33,3 +33,9 @@ namespace App;
 
 //     return $price;
 // },  100, 2 );
+
+
+add_filter('woocommerce_loop_add_to_cart_args', function($args, $product) {
+    $args["class"] .= ' hollow';
+    return $args;
+}, 10, 2);
