@@ -7,6 +7,10 @@
       text-shadow: 1px 1px rgba(0, 0, 0, 0.32);
       transition: all 0.3s ease;
       visibility: hidden;
+
+      @include breakpoint(medium down) {
+        visibility: visible;
+      }
     }
 
     &:hover h3 {

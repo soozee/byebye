@@ -1,5 +1,5 @@
 
-<div class="masonry grid-x small-up-2 medium-up-3 grid">
+<div class="masonry grid-x small-up-1 medium-up-2 large-up-3 grid">
   @if (have_rows('masonry_options', 'option'))
     @while( have_rows('masonry_options', 'option'))
       @php(the_row())

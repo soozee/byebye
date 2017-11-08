@@ -30,8 +30,8 @@
   color: #000;
   text-transform: uppercase;
   font-size: 1.25em;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  z-index: 3;
 }
 
 .grid figure figcaption::before,
