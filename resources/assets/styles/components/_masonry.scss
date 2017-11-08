@@ -3,17 +3,23 @@
     h3 {
       position: absolute;
       color: #fff;
-      font-family: 'Poiret One', cursive;
-      padding: 0 20px;
-      width: 100%;
+      font-family: font(primary);
       text-align: center;
       text-shadow: 1px 1px rgba(0, 0, 0, 0.32);
-      z-index: 3;
       transition: all 0.3s ease;
+      visibility: hidden;
+    }
+
+    &:hover h3 {
+      visibility: visible;
     }
 
     p {
       margin: 0;
+    }
+
+    img {
+      max-width: 98%;
     }
   }
 }

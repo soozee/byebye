@@ -1,9 +1,19 @@
 /** Colors */
 $foundation-palette: (
-  primary: #232b2b,
+  primary: #f1f7ed,
   secondary: #1866ff,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 );
+
+/* fonts */
+$font-stack: (
+  primary: #{'Helvetica Neue', Helvetica, Arial, sans-serif},
+  secondary: #{Georgia, 'Times New Roman', sans-serif},
+);
+// $fonts: (
+//     handwritten: 'Just Another Hand', cursive,
+//     print: 'Helvetica', sans-serif
+// )
 

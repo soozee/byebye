@@ -22,3 +22,14 @@ namespace App;
 
 //     return $theme_template ? template_path($theme_template) : $template;
 // }, 100, 3);
+
+// add_action('woocommerce_get_price_html', function($price, $product) {
+//     $discount = preg_match("/<del>(.*?)<\/del>/", $price);
+//     $originalPrice = preg_match("/<ins>(.*?)<\/ins>/", $price);
+
+//     if ($discount && $originalPrice) {
+//         return "<ins>$price</ins> <del>$discount</del>";
+//     }
+
+//     return $price;
+// },  100, 2 );
