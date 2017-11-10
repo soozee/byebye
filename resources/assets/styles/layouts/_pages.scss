@@ -52,7 +52,22 @@ label {
   display: inline;
 }
 
+.woocommerce div.product div.summary {
+  background-color: white;
+  padding: 1%;
+  border-radius: 3px;
+}
+
 .woocommerce ul.products li.product,
 .woocommerce-page ul.products li.product {
   text-align: center;
+}
+
+#add_payment_method #payment,
+.woocommerce-cart #payment,
+.woocommerce-checkout #payment,
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message {
+  background-color: rgba(255, 255, 255, 0.39);
 }
