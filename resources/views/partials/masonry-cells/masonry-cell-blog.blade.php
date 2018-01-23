@@ -5,6 +5,9 @@
   <a href="{{ get_permalink($recent->ID) }}">
     <figcaption>
         <h3>{{ get_the_title($recent->ID) }}</h3>
+        @if( get_sub_field('page_link_text') )
+        <p>{{ the_sub_field('page_link_text') }}</p>
+        @endif
     </figcaption>
   </a>
   <a href="{{ get_permalink($recent->ID) }}">
